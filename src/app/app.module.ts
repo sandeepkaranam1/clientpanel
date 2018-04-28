@@ -23,7 +23,7 @@ import { NotFoundComponent } from './components/not-found/not-found.component';
 import { AppRoutingModule } from './/app-routing.module';
 import { ClientDetailsComponent } from './components/client-details/client-details.component';
 import { ClientService } from './services/client.service';
-
+import { AuthService } from './services/auth.service';
 
 @NgModule({
   declarations: [
@@ -49,7 +49,7 @@ import { ClientService } from './services/client.service';
     FormsModule,
     FlashMessagesModule.forRoot()
   ],
-  providers: [ClientService],
+  providers: [ClientService,AuthService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
